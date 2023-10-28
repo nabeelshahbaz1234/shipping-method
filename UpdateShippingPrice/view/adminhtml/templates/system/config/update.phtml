@@ -1,0 +1,13 @@
+<?php
+/** @var $block \RltSquare\UpdateShippingPrice\Block\Adminhtml\System\Config\ImportButton */
+?>
+
+<div class="pp-buttons-container">
+    <p>
+        <button id="<?php echo $block->getHtmlId() ?>"
+                onclick="setLocation('<?php /* @escapeNotVerified */ echo $block->getSendUrl() ?>')"
+                type="button">
+            <?php /* @escapeNotVerified */ echo __('Import Csv Box!') ?>
+        </button>
+    </p>
+</div>

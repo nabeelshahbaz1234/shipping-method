@@ -1,0 +1,22 @@
+{
+  "name": "rlt-square/module-update-shipping-price",
+  "version": "1.0.0",
+  "description": "Update Shipping Price",
+  "type": "magento2-module",
+  "require": {
+    "../../../../vendor/magento/framework": "*",
+    "../../../../vendor/magento/module-catalog": "104.0.*",
+    "../../../../vendor/magento/module-checkout": "100.4.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "RltSquare\\UpdateShippingPrice\\": ""
+    }
+  }
+}

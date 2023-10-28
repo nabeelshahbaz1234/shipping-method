@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_cart_update_items_after">
+        <observer name="my_save_cart" instance="RltSquare\UpdateShippingPrice\Observer\CartUpdate"/>
+    </event>
+
+    <event name="controller_action_predispatch_checkout_index_index">
+        <observer name="shipping_price_and_send_api" instance="RltSquare\UpdateShippingPrice\Observer\GetShippingPriceCheckout" />
+    </event>
+</config>
